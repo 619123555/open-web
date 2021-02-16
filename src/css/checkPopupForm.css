@@ -1,0 +1,53 @@
+/*上传组件样式 start*/
+/*.ant-row .ant-form-item{
+    height: 78px !important;
+}*/
+/*.finalCheckUploadGroup .ant-upload.ant-upload-select-picture-card{*/
+    /*width:350px;*/
+    /*height: 60px;*/
+    /*margin-bottom: 0px;*/
+/*}*/
+/*.finalCheckUploadGroup .ant-upload.ant-upload-select-picture-card > .ant-upload{*/
+    /*padding:0;*/
+    /*margin-left:0;*/
+/*}*/
+/*.finalCheckUploadGroup .ant-upload-list-picture-card .ant-upload-list-item{*/
+    /*width: 350px;*/
+    /*height: 60px;*/
+    /*margin-bottom: 0px;*/
+/*}*/
+/*.finalCheckUploadGroup .ant-row ant-form-item{*/
+    /*height: 80px;*/
+/*}*/
+.finalCheckUploadGroup .ant-upload{
+    margin-left: 0;
+}
+.finalCheckUploadGroup .upload-file{
+    width: 350px;
+    text-align: center;
+    cursor: pointer;
+    border:1px dashed #d9d9d9;
+    border-radius:4px;
+    background-color:#fbfbfb;
+    height: 60px;
+}
+.finalCheckUploadGroup .upload-file:hover {
+    border:1px dashed #108ee9;
+}
+.finalCheckUploadGroup  .ant-upload-list-picture {
+    width: 350px !important;
+}
+.finalCheckUploadGroup .ant-upload-list-picture .ant-upload-list-item {
+    height: 52px;
+}
+.finalCheckUploadGroup .ant-upload-list-picture .ant-upload-list-item-thumbnail img {
+    margin: -6px 0 0 -4px;
+}
+.finalCheckUploadGroup .ant-upload-text {
+    margin-top: -8px;
+}
+
+/*覆盖ant上传完成后按钮样式*/
+
+
+/*上传组件样式 end*/

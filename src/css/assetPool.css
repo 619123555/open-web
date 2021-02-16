@@ -1,0 +1,196 @@
+.totalAmtDiv span:first-child{
+    font-weight: bold;
+}
+.totalAmtDiv span{
+    margin-left: 1rem;
+}
+.textRight{
+    text-align: right;
+}
+.textCenter{
+    text-align: center !important;
+}
+
+/*选择债权列表样式 begin */
+.select-box{
+    overflow: hidden;
+    position: fixed;
+    right:-550px;
+    z-index:99;
+    transition:0.3s ease-in-out ;
+}
+@media screen and (max-width : 1400px){
+    .select-box{
+        top:65px;
+    }
+}
+@media screen and (min-width:1401px)and (max-width:1680px){
+    .select-box{
+        top:120px;
+    }
+}
+@media screen and (min-width:1681px){
+    .select-box{
+        top:170px;
+    }
+}
+.slideBtn{
+    width:30px;
+    line-height:90px;
+    float: left;
+    margin-top:50px;
+    background:#000;
+    opacity: 0.8;
+    border-radius: 3px 0 0 3px;
+    text-align: center;
+    color:#fff;
+    font-size:18px;
+    cursor:pointer;
+}
+.select-content{
+    width: 550px;
+    float:left;
+    background: rgba(0,0,0,0.8);
+    border-radius: 3px 0 0 3px;
+    padding: 15px 25px;
+}
+.select-content input{
+    width: 100%;
+    padding-left: 10px;
+    background: #222D32;
+    border: 1px solid #222D32;
+    line-height: 25px;
+}
+.select-content ul{
+    border-radius: 3px;
+    padding: 5px 10px;
+    list-style: none;
+    margin-top:10px ;
+    background: #222D32;
+    height:530px;
+    overflow: auto;
+}
+.select-content ul li{
+    line-height:25px;
+    color:#fff;
+    border-bottom: 1px dashed #8aa4af;
+    position:relative;
+    overflow: hidden;
+}
+.select-content ul li a{
+    z-index: 999;
+    right:5px;
+    text-decoration: none;
+    display: none;
+    line-height: 23px;
+    margin:auto 0;
+    position: absolute;
+    width:42px;
+    text-align: center;
+    background: rgb(30,40,44);
+    color: #b8c7ce;
+}
+.select-content ul li a:hover{
+    color: #dd4b39;
+}
+.select-content ul li:hover{
+    background: rgb(30,40,44);
+}
+/*选择债权列表样式 end */
+.chooseTable{
+    width: 100%;
+    font-size: 14px;
+    background: #3e3e3e;
+    border-radius: 4px;
+    /*font-weight:600;*/
+}
+.chooseTable .chooseThead{
+    line-height: 35px;
+}
+.chooseTable .chooseThead th{
+    border-bottom: 1px solid #868686;
+    text-align: center;
+    font-family: "youyuan";
+}
+
+.chooseTable .chooseThead th:nth-of-type(1),.chooseTable .chooseThead th:nth-of-type(2){
+    padding-left: 12px;
+}
+
+.chooseTable .chooseTbody{
+    height: 35px;
+}
+.chooseProject{
+    width:93px;
+}
+.chooseTable .chooseTbody td{
+    text-align: center;
+    font-size: 14px;
+}
+.chooseTable .chooseTbody td:nth-of-type(1),.chooseTable .chooseTbody td:nth-of-type(2){
+    padding-left: 12px;
+}
+
+
+.chooseTable .chooseTbody td.chooseThMoney{
+    text-align: right;
+    padding-right: 12px;
+}
+.chooseInput{
+    margin-top:15px;
+}
+.chooseInput input{
+    color:white;
+    line-height: 30px;
+    border-radius: 4px;
+    background: #000;
+    border-color: #858585;
+    font-size: 14px;
+}
+.select-content .ant-table-fixed-header .ant-table-scroll .ant-table-header{
+    margin-bottom: 0 !important;
+    overflow: hidden !important;
+}
+.select-content .ant-table-thead > tr > th{
+    background: none !important;
+    color: #fff !important;
+    font-size: 14px !important;
+    border-bottom:1px solid #868686 !important;
+}
+.select-content .ant-table-header{
+    background: none !important;
+}
+.select-content .ant-table-fixed-header .ant-table-body{
+    background: none !important;
+    overflow-y: auto !important;
+}
+.select-content .ant-table-tbody > tr > td{
+    color:#fff !important;
+    border-color:#868686 !important;
+}
+.select-content .ant-table-thead > tr.ant-table-row-hover > td,.select-content .ant-table-tbody > tr.ant-table-row-hover > td,.select-content .ant-table-thead > tr:hover > td,.select-content .ant-table-tbody > tr:hover > td{
+    background: none !important;
+}
+.select-content .ant-table-placeholder{
+    background: none !important;
+    color: #fff !important;
+}
+.select-content  .ant-table-wrapper{
+    height:300px;
+}
+.select-content .chooseBtn{
+    margin-top: 60px;
+    text-align: center;
+}
+.select-content .chooseDelete:focus{
+    text-decoration: none;
+}
+
+.projectGap td{
+    border:1px solid rgb(217,217,217);
+}
+
+/*资产池查询input不与下拉框一般高，在这儿指定高度*/
+.ant-advanced-search-form .ant-input, .ant-advanced-search-form .ant-input-group .ant-input, .ant-advanced-search-form .ant-input-group .ant-input-group-addon{
+    height: 30px;
+}

@@ -1,0 +1,12 @@
+.charHeight{
+    height:600px;
+}
+
+.emptyChar{
+    text-align: center;
+    font-size: 12px;
+    padding:10px;
+}
+.displayClass{
+    display: none;
+}

@@ -1,0 +1,14 @@
+.mR-box .widget-content-user{
+    overflow: hidden;
+}
+.mR-box .roleOrgList{
+    float: left;
+    max-height: 415px;
+    overflow-y: auto;
+    margin-right: 10px;
+    max-width: 221px;
+    overflow-x: auto;
+}
+.mR-box .roleOrgTransfer{
+    float: left;
+}

@@ -1,0 +1,91 @@
+.grid-panel{
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+}
+.grid-panel-title{
+    text-align: left;
+    color: #108EE9;
+}
+.grid-panel-btn{
+    text-align: right;
+}
+.grid-panel-header{
+    margin: 10px;
+}
+.btn{
+    display: inline-block;
+    border: 1px solid #6699ff;
+    color: #6699ff;
+    border-radius: 5px;
+    padding: 3px 10px;
+    cursor: pointer;
+    margin-right:5%;
+}
+.return-btn{
+
+}
+.collection-work-pannel{
+   background-color: rgba(183, 183, 183, 0.17);
+    border-radius: 4px;
+    border-top: 3px solid #6699ff;
+    -webkit-box-shadow:0 0 10px rgba(0, 34, 77, 0.23);
+    -moz-box-shadow:0 0 10px rgba(0, 34, 77, .23);
+    box-shadow:0 0 10px rgba(0, 34, 77, .23);
+    padding: 10px;
+}
+.grid-task-panel{
+}
+.collection-work-child-pannel{
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    -webkit-box-shadow:0 0 5px rgba(0, 34, 77, 0.3);
+    -moz-box-shadow:0 0 5px rgba(0, 34, 77, .3);
+    box-shadow:0 0 5px rgba(0, 34, 77, .3);
+    padding:10px;
+    border-radius: 3px;
+    line-height: 25px;
+    word-wrap:break-word;
+
+}
+.collection-work-obligor-title-pannel h2{
+    color: #6699ff;
+}
+.collection-work-obligor-inf-pannel{
+    font-size: 14px;
+    margin-top: 10px;
+    border-top: 1px solid #cccccc;
+    padding-top: 10px;
+}
+.collection-work-child-pannel label{
+    font-weight: 600;
+    font-size: 12px;
+    display: inline-block;
+    width: 98%;
+    text-align: right;
+    padding-right: 2%;
+}
+
+.collection-work-obligor-title-btn-pannel{
+    text-align: right;
+}
+.collection-work-add-pannel{
+    margin-left: 10px;
+}
+.collection-work-parent-add-pannel{
+    padding-right: 10px;
+}
+.dynamic-delete-button {
+    cursor: pointer;
+    position: relative;
+    top: 4px;
+    font-size: 24px;
+    color: #999;
+    transition: all .3s;
+}
+.dynamic-delete-button:hover {
+    color: #777;
+}
+.dynamic-delete-button[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+}

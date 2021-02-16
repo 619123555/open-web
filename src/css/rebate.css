@@ -1,0 +1,106 @@
+.assetInfo{
+    padding: 16px 8px;
+    background: #f8f8f8;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+}
+
+.assetInfo .textStyle{
+    display: inline-block;
+    background: #d9d9d9;
+    width: 80%;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+.assetInfo label{
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.assetBox {
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.assetBox .tabTitle {
+    display: block;
+    color: #108ee9;
+    padding: 16px;
+    font-size: 16px;
+    margin-left: -10px;
+}
+
+.db-table-button .tableTitle,.db-table-button .btnBox{
+    padding: 10px;
+}
+
+.db-table-button .tableTitle{
+    text-align: left;
+    margin-left: -15px;
+    color: #108ee9;
+}
+
+.db-table-button .btnBox{
+    text-align: right;
+}
+
+.btnStyle {
+    margin-left: 60px;
+}
+
+.fund {
+    margin-top: 30px;
+}
+
+.flagText1 {
+    display: block;
+    border: 1px solid #ffffff;
+    background: #c9c9c9;
+    color: #ffffff;
+    text-align: center;
+    width: 60%;
+    height: 100%;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.flagText2 {
+    display: block;
+    border: 1px solid #ffffff;
+    background: #49a9ee;
+    color: #ffffff;
+    text-align: center;
+    width: 60%;
+    height: 100%;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.inputStyle {
+    display: block;
+    padding-left: 142px;
+    font-style: oblique;
+}
+
+.inputStyle > span {
+    font-size: 16px;
+    color: #66ccff;
+}
+
+
+
+
+
+
+
+
+
+
+
+

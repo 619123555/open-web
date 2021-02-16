@@ -1,0 +1,18 @@
+/** 贷款账务查询 **/
+#loanAccounts {
+    margin: 8px 0px;
+    padding: 16px 8px;
+    background: #f8f8f8;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+}
+
+#loanAccounts div.ant-row {
+    padding: 16px;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+#loanAccounts div.ant-row div:nth-of-type(odd) {
+    text-align: right;
+    padding-right: 8px;
+    font-weight: bold;
+}

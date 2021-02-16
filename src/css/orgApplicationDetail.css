@@ -1,0 +1,99 @@
+.orgApplicationDetail .main {
+    padding-right: 106px;
+}
+
+.orgApplicationDetail .tools {
+    width: 130px;
+    position: fixed;
+    background-color:#fff;
+    top: 5vh;
+    right:0px;
+    height:95vh;
+    padding-left:10px;
+
+}
+
+.orgApplicationDetail .myAnchor{
+    margin-top:70px;
+    font-size: 14px;
+    padding-left: 3px;
+    line-height:30px;
+}
+
+@media ( max-width:1250px) {
+    .orgApplicationDetail .main {
+        width:100%;
+        padding-right: 0;
+    }
+
+    .orgApplicationDetail .tools {
+        display:none;
+    }
+}
+
+
+
+.orgApplicationDetail .buttonGroup {
+    margin-top: 20px;
+}
+
+.orgApplicationDetail .buttonGroup button {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.orgApplicationDetail .basicInfoForm {
+    margin-bottom: 50px;
+}
+
+.orgApplicationDetail .grid-panel {
+    padding: 0px 0px;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+    margin-bottom: 7px;
+}
+
+.orgApplicationDetail .grid-title {
+    padding: 10px;
+    text-align: left;
+    margin-left: -15px;
+    color: #108ee9;
+}
+
+.orgApplicationDetail .db-table-button {
+    margin: 4px 0 4px 1.5% !important;
+    font-size: 16px !important;
+    text-align: left !important;
+}
+
+.orgApplicationDetail .anticon-cross {
+    display: none;
+}
+
+.orgApplicationDetail label + * {
+    margin-left: 20px;
+}
+
+.orgApplicationDetail label + textarea {
+    width: 80%;
+}
+
+.orgApplicationDetail .checker {
+    font-family: "Arial Black";
+    font-weight: bold;
+}
+
+/*
+.orgApplicationDetail .grid-panel{
+    padding: 24px;
+    background: #fbfbfb;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+}*/
+.file-box{padding:0 100px 0 50px !important; }
+.file-box img{display: block; float:left; margin-left: -50px; }
+.file-box-txt{height:50px !important; display:table-cell; overflow:hidden; line-height: 16px !important; word-break:break-all; vertical-align: middle;}
+.file-box ul{float:right !important; margin-right:-100px !important; width:100px !important; display: block !important;}
+.final-file-box{
+    padding-right: 10px !important;
+}

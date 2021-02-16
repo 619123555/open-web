@@ -1,0 +1,49 @@
+.selectTotal {
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 20px;
+    color: rgba(0, 0, 0, .65);
+    border-radius: 0 0 4px 4px;
+    position: relative;
+}
+
+.selectTotalHead span:first-child {
+    font-weight: bold;
+}
+
+.selectTotalHead span {
+    margin-left: 1rem;
+}
+
+.selectTotalHead .boldFont {
+    font-weight: bold;
+}
+
+.topAppendHead span{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.topAppendHead span{
+    margin-left: 1rem;
+}
+
+.pkgListModal {
+    overflow: hidden;
+}
+
+.pkgListModal > p {
+    font-size: 16px;
+}
+
+.pkgListModal .pkgListModal-left, .pkgListModal .pkgListModal-right {
+    float: left;
+}
+
+.pkgListModal .pkgListModal-left span, .pkgListModal .pkgListModal-right {
+    font-size: 14px;
+}
+
+.pkgListModal .pkgListModal-right {
+    margin-left: 20px;
+}

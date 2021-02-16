@@ -1,0 +1,274 @@
+body{
+    font-family: Arial,"Microsoft YaHei";
+}
+.ant-layout-header{
+    height: auto!important;
+}
+.ant-layout-header .ant-menu-root .ant-menu-submenu:last-child{
+    float: right;
+}
+
+.ant-layout-header .ant-menu-root>li:first-child{
+    border-bottom: 2px solid transparent;
+    color: rgba(0,0,0,0.65);
+}
+.ant-layout-header .ant-menu-root>li:first-child:hover{
+    color: #108ee9;
+}
+.layoutHeader{
+    position: fixed;
+    width: calc(100% - 200px);
+    height: 65px;
+    z-index: 2;
+}
+.layoutContent{
+    margin-top: 65px;
+    z-index: 1;
+    min-height: calc(100vh - 65px);
+    overflow-y: hidden;
+}
+
+.default{
+    color: red !important;
+}
+.default a{
+    color: red;
+}
+.default span{
+    font-size: 16px;
+}
+
+.ant-row .ant-form-item {
+    font-size: 12px;
+    margin-bottom: 0;
+    color: rgba(0, 0, 0, 0.65);
+    vertical-align: top;
+    height: 58px;
+}
+
+.ant-advanced-search-form {
+    padding: 16px 8px;
+    background: #f8f8f8;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+}
+
+.ant-advanced-search-form .ant-form-item {
+    margin-bottom: 0 !important;
+}
+
+/* 由于输入标签长度不确定，所以需要微调使之看上去居中 */
+.ant-advanced-search-form > .ant-row {
+    position: relative;
+    left: -6px;
+}
+
+.ant-advanced-search-form .ant-btn + .ant-btn {
+    margin-left: 8px;
+}
+
+/* 我讨厌写css... */
+.db-pagination {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    float: left;
+}
+
+/*页面table上功能按钮的样式*/
+.db-table-button {
+    margin: 4px 0 4px 1.5%;
+    font-size: 16px;
+    text-align: left;
+}
+.db-table-list {
+    margin: 8px 0 6px 0;
+}
+
+.ant-upload {
+    margin-left: 4px;
+}
+
+/*解决form输入框居中的问题，变更为右对齐*/
+.ant-form-item .ant-form-item-control {
+    text-align: left;
+}
+
+/*分页设置为右对齐*/
+.ant-advanced-context-pagination {
+    margin-top: 4px;
+    text-align: right;
+}
+
+.ant-anchor-wrapper .ant-anchor {
+    position: relative;
+    text-align: left;
+    z-index: 9999;
+}
+
+.ant-tabs-content-left {
+    text-align: left;
+}
+
+/*时间框和其他输入框不对齐问题*/
+.ant-calendar-picker {
+    position: relative;
+    display: inline-block;
+    outline: none;
+    font-size: 12px;
+    transition: opacity 0.3s;
+    width: 100% !important;
+}
+/*----------------------------------loading------------------------------------*/
+.main-loading{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    display: none;
+    z-index: 1999;
+    background: rgba(255,255,255,.2);
+}
+.loadingIcon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: rgb(19,143,233);
+}
+.formatRight{
+    text-align: right !important;
+}
+.ant-input-lg{
+    height: 31px;
+}
+input::-webkit-contacts-auto-fill-button {
+    visibility: hidden;
+    display: none !important;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+}
+.ant-back-top {
+    right: 50px;
+}
+
+.ant-menu-item,
+.ant-menu-submenu-title {
+    margin: 0;
+    padding: 0 5px;
+    position: relative;
+    display: block;
+    white-space: nowrap;
+}
+
+/*---------------------------------piims---------------------------------------*/
+.table-content{
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+.table-content>p{
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.table-content .apply-standby-btn{
+    text-align: right;
+    margin-bottom: 20px;
+}
+.table-content .apply-standby-btn button{
+    margin-right: 20px;
+}
+.table-content .option-btn button{
+    margin-right:20px;
+}
+.table-content .table-input-box .table-input-leftCont{
+    text-align: right;
+    padding-right: 50px;
+}
+.table-content .table-input-box label{
+    min-width: 100px;
+    display: inline-block;
+    text-align: right;
+    margin-right: 10px;
+}
+.table-content .table-input-box .ant-calendar-picker,.table-content .table-input-box .ant-input,.table-content .table-input-box .ant-select{
+    width: 350px !important;
+}
+.table-input-leftCont>div,.table-input-rightCont>div{
+    margin-bottom: 20px;
+}
+.ant-modal-body .ant-select{
+    width: 100%;
+}
+.table-content .searchContent-3{
+    padding: 0 30px;
+}
+.table-content .searchContent-3 .ant-select{
+    width: 100%;
+}
+.table-content .searchContent-3 .ant-calendar-picker,.table-content .searchContent-3 input{
+    max-width: 350px;
+}
+.actionTreeModal .ant-tree{
+    max-height: 400px;
+    overflow: auto;
+}
+.actionModal .selectedUserArea{
+    min-height: 32px;
+    max-height: 100px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    overflow-y: auto;
+    padding: 10px;
+}
+.fileDetail-cont{
+    height: 600px;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+.fileDetail-cont .fileDetail{
+    overflow: hidden;
+}
+.fileDetail-cont .fileDetail img{
+    width: 700px;
+}
+.fileDetail-cont .fileDetail .fileComplete{
+    text-align: center;
+    color: #bbb;
+    font-size: 18px;
+    padding: 0 10px;
+    border: 1px dashed #bbb;
+    border-radius: 4px;
+    margin-top: 30px;
+}
+.actionTreeModal .tree-selectList{
+    border:1px solid #d9d9d9;
+    padding: 15px;
+}
+.actionTreeModal .tree-selectList>p{
+    text-align: right;
+    line-height: 30px;
+}
+.actionTreeModal .tree-selectList>ul{
+    height: 300px;
+    overflow-y:auto;
+    padding: 0 10px;
+}
+.actionTreeModal .tree-selectList>ul>li{
+    line-height: 20px;
+    cursor: pointer;
+}
+.actionTreeModal .tree-selectList>input{
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    line-height: 28px;
+    border-radius: 4px;
+    padding: 0 10px;
+}
+#action-checkUser-tip{
+    color: red;
+    display: none;
+}
+.table-box{
+    border:none !important;
+}

@@ -1,0 +1,225 @@
+fieldset{
+    border:none;
+}
+.login{
+    position: fixed;
+    width: 400px;
+    transform: translateX(-50%) translateY(-50%);
+    top: 40%;
+    left: 50%;
+    border-radius: 4px;
+    background-image: -webkit-linear-gradient( 90deg, rgba(3,0,0,0.1) 0%, rgba(255,255,255,0.1) 0%);
+    /* box-shadow: 0px 3px 27px 0px rgba(8, 1, 3, 0.14), inset 0px 1px 6px 0px rgba(255, 255, 255, 0.39); */
+    box-shadow: 0px 3px 27px 0px rgba(8, 1, 3, 0.14), inset 0px -1px 4px 0px rgba(0, 0, 0, 0.05), inset 0px 1px 6px 0px rgba(255, 255, 255, 0.39);
+    padding: 28px 50px 30px;
+    border:1px solid #d9d9d9;
+}
+
+.login-logo {
+    margin:auto;
+    text-align: center;
+    width: 116px;
+    height: 127px;
+    background-image: url(../../images/login-logo.png);
+}
+.form-title{
+    text-align: center;
+    margin-bottom:30px;
+    font-family: "Youyuan";
+    font-size: 30px;
+}
+.form-control:hover {
+    border-color: #49a9ee;
+}
+.form-control{
+    width: 100%;
+    padding: 5px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+}
+.form-control::-moz-placeholder{
+    color:#c9c9c9 !important;
+}
+::-webkit-input-placeholder{
+    color:#c9c9c9 !important;
+}
+/*:-moz-placeholder{
+    color:#fff !important;
+}
+::-moz--placeholder{
+    color:#fff !important;
+}*/
+:-ms-input-placeholder{
+    color:#c9c9c9 !important;
+}
+.form-group{
+    margin-bottom: 30px;
+    position: relative;
+}
+.input-fa-icon{
+    line-height: 32px !important;
+    font-size: 18px !important;
+    color: #d9d9d9;
+    position: absolute;
+    right: 10px;
+}
+/*---------------------------------select-------------------------------*/
+.chk_1{
+    display: none;
+}
+.chk_1 + label {
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    font-weight: 100;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 13px;
+    height: 13px;
+    vertical-align: middle;
+    margin-top: 0;
+    border-radius: 2px;
+}
+
+.form-actions{
+    padding: 0 15px;
+    text-align: right;
+    margin-bottom: 30px;
+}
+.form-actions .remember-text{
+    color:#fff;
+}
+.form-actions .forgetPwd{
+    color:#fff;
+    text-decoration: none;
+    user-select:none;
+}
+.form-loginBtn{
+    width: 100%;
+    text-align: center;
+}
+.login-btn{
+    width: 100%;
+    border: 1px solid #108ee9;
+    background: #108ee9;
+    height: 30px;
+    border-radius: 4px;
+    color:#fff;
+    cursor: pointer;
+}
+.form-control:focus{
+    border:1px solid rgba(255,255,255,0.3);
+}
+#validate{
+    display: none;
+}
+#channel-box{
+    display: none;
+}
+.remember-text{
+    vertical-align: middle;
+    user-select:none;
+}
+/*----------------------------滑块验证---------------------------------*/
+#slider {
+    width: 300px;
+    height: 30px;
+    position: relative;
+    border-radius: 4px;
+    background-color: rgba(0,0,0,0.2);
+    overflow: hidden;
+    text-align: center;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    box-shadow: inset 0px 2px 7px 0px rgba(0, 0, 0, 0.54),inset 0px -1px 1px 0px rgba(255, 255, 255, 0.54);
+}
+#slider_bg {
+    position: absolute;
+    left: -150px;
+    top: 0;
+    background-color: rgba(255, 255, 255,.2);
+    z-index: 1;
+}
+.sliderAnimation{
+    height: 50%;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: searchLights 1s ease-in 0s 1;
+    -o-animation: searchLights 1s ease-in 0s 1;
+    animation: searchLights 1s ease-in 0s 1;
+}
+
+@-webkit-keyframes searchLights {
+    0% { left: -150px; top: 0; }
+    to { left: 200px; top: 100px; }
+}
+@-o-keyframes searchLights {
+    0% { left: -130px; top: 0; }
+    to { left: 120px; top: 100px; }
+}
+@-moz-keyframes searchLights {
+    0% { left: -130px; top: 0; }
+    to { left: 120px; top: 100px; }
+}
+@keyframes searchLights {
+    0% { left: -150px; top: 0; }
+    to { left: 200px; top: 100px; }
+}
+
+#label {
+    border-radius: 4px;
+    width: 38px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 29px;
+    line-height: 27px;
+    border: 1px solid #cccccc;
+    background: #fff;
+    z-index: 3;
+    cursor: move;
+    font-weight: 900;
+    color: rgb(130, 130, 130);
+    font-size: 22px;
+}
+#labelTip {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    font-family: 'Microsoft Yahei', serif;
+    color: #fff;
+    line-height: 28px;
+    text-align: center;
+    z-index: 2;
+}
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
+    #labelTip {
+        background:-webkit-gradient(linear,left top,right top,color-stop(0,#fff),color-stop(.1,#fff),color-stop(.2,#fff),color-stop(.3,#fff),color-stop(.4,#fff),color-stop(.5,rgba(255,255,255,0)),color-stop(.6,#fff),color-stop(.7,#fff),color-stop(.8,#fff),color-stop(.9,#fff),color-stop(1,#fff));
+        -webkit-background-clip:text;
+        -webkit-text-fill-color:transparent;
+        -webkit-animation:slidetounlock 3s infinite;
+        -webkit-text-size-adjust:none;
+    }
+}
+@-webkit-keyframes slidetounlock {
+    0% {
+        background-position:-160px 0
+    }
+    100% {
+        background-position:160px 0
+    }
+}
+.loginAdvice{
+    line-height: 35px;
+    text-align: center;
+    display: none;
+}

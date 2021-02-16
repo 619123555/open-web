@@ -1,0 +1,43 @@
+/*审核弹框样式 start*/
+/*展开form start*/
+.expanded-enter {
+    position:fixed;
+    bottom:-270px;
+}
+.expanded-enter.expanded-enter-active {
+    position:fixed;
+    bottom:-10px;
+    transition: bottom 1000ms;
+    /*transition: property duration timing-function delay;*/
+}
+.collapsed-leave {
+    opacity:1;
+}
+.collapsed-leave.collapsed-leave-active {
+    opacity:0;
+    transition: opacity 0ms;
+}
+/*展开form end*/
+
+
+
+/*折叠form start*/
+.expanded-leave {
+    position:fixed;
+    bottom:-10px;
+}
+.expanded-leave.expanded-leave-active {
+    position:fixed;
+    bottom:-570px;
+    transition: bottom 1000ms ;
+}
+.collapsed-enter {
+    opacity:0;
+}
+
+.collapsed-enter.collapsed-enter-active {
+    opacity:1;
+    transition: opacity 0ms 280ms;
+}
+/*折叠form end*/
+/*审核弹框样式 end*/

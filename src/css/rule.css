@@ -1,0 +1,263 @@
+.panel{
+    padding: 16px 8px;
+    background: #f8f8f8;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+}
+.panel .text-panel{
+    background: #d9d9d9;
+    display: inline-block;
+    width: 85%;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+}
+.panel label{
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.grid-panel{
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+.db-table-button .grid-title,.db-table-button .grid-operation-group{
+    padding: 10px;
+}
+.db-table-button .grid-title{
+    text-align: left;
+    margin-left: -15px;
+    color: #108ee9;
+}
+
+.db-table-button .grid-operation-group{
+    text-align: right;
+}
+.legeng{
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 20px;
+}
+.legeng.lightgblue{
+    background-color: #66ccff;
+}
+.legeng.green{
+    background-color: #99cc99;
+}
+.legeng.lightggray{
+    background-color: #999999;
+}
+.legeng.yellow{
+    background-color: #ffcc33;
+}
+.legeng.darkblue{
+    background-color: #6699ff;
+}
+.legeng.darkgray{
+    background-color: #e4e4e4;
+}
+.legeng.zise{
+    background-color:#cc66ff!important;
+}
+.checkbox-container{
+    border-top: 1px solid #d9d9d9;
+    padding: 30px;
+
+}
+.setrule-btn {
+    display: inline-block;
+    border: 1px solid #6699ff;
+    color: #6699ff;
+    border-radius: 5px;
+    padding: 3px;
+    cursor: pointer;
+    margin-right:5%;
+
+}
+.setrule-btnSS{
+    display: inline-block;
+    border: 1px solid #6699ff;
+    color: #6699ff;
+    border-radius: 5px;
+    padding:3px 12px;
+    cursor: pointer;
+    margin-right:5%;
+}
+
+/** 附件表格样式 **/
+table.table-presentation{
+    border-collapse:collapse; width:100%;
+}
+table.table-presentation td, table.table-presentation th{
+    padding:13px 15px ; line-height:24px; border:1px solid rgba(0, 0, 0,0.1); text-align:left;
+}
+table.table-presentation thead th{
+    font-size:14px;font-weight: 500;
+}
+table.table-presentation tbody td{
+    font-size:12px; font-weight:lighter;
+}
+
+/** 初审结果样式 **/
+table.table-firstAudit{
+    border-collapse:collapse; width:100%;color: #000
+}
+table.table-firstAudit td, table.table-firstAudit th{
+    padding:13px 15px ; line-height:24px; text-align:left;
+}
+table.table-firstAudit thead th{
+    font-size:14px;font-weight: 500;
+}
+table.table-firstAudit tbody tr:first-child{
+    background: rgb(247,247,247);
+}
+table.table-firstAudit tbody tr td:nth-child(odd){
+    width: 90px;
+}
+table.table-firstAudit tbody tr:first-child td:nth-child(2){
+    font-weight: bold;
+}
+table.table-firstAudit tbody tr:nth-child(3){
+    vertical-align: top;
+}
+table.table-firstAudit tbody tr:nth-child(3) td:last-child{
+    padding-top: 0;
+}
+table.table-firstAudit tbody td{font-size:12px; font-weight:lighter;}
+
+table.table-firstAudit .firstTrialWord>div{
+    border: 1px solid rgb(217,217,217);
+    border-radius: 4px;
+    height: 53px;
+    padding: 0 15px;
+    margin-bottom: 10px;
+}
+table.table-firstAudit .firstTrialWord>div ul{
+    float: right;
+    margin-right: 30px;
+    text-align: center;
+    padding-left: 20px;
+    border-left: 1px solid rgb(217,217,217);
+    width: 90px;
+}
+table.table-firstAudit .firstTrialWord>div ul li:last-child{
+    font-size: 13px;
+}
+table.table-firstAudit .firstTrialWord>div ul li:last-child i{
+    margin-right: 4px;
+}
+table.table-firstAudit tbody tr:last-child td:nth-child(2)>div{
+    border: 1px solid rgb(217,217,217);
+    height: 165px;
+    padding: 15px;
+}
+table.table-firstAudit tbody tr:nth-child(2) td:nth-child(2)>a{
+    color: #fff;
+    padding: 6px 15px;
+    cursor: default;
+}
+table.table-firstAudit tbody tr:nth-child(2) td:nth-child(2)>a i{
+    margin-right: 10px;
+}
+.fileInfo{
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+    height: 66px;
+    margin: 8px 0;
+}
+.fileName{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0 0 0 8px;
+    line-height: 44px;
+    transition: all .3s;
+    padding-right: 8px;
+    max-width: 85%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.fileImg>img{
+    width: 48px;
+    height: 48px;
+    top: 8px;
+    left: 8px;
+    cursor: pointer;
+}
+.fileInfo>i{
+    display: block !important;
+    float: right;
+    margin-top: -55px;
+    cursor: pointer;
+}
+
+/* 资产推介方、资金方锚点相关样式 */
+.orgApplyInfo .main {
+    padding-right: 106px;
+}
+
+.orgApplyInfo .tools {
+    width: 130px;
+    position: fixed;
+    background-color:#fff;
+    top: 5vh;
+    right:0px;
+    height:95vh;
+    padding-left:10px;
+
+}
+
+.orgApplyInfo .myAnchor{
+    margin-top:70px;
+    font-size: 14px;
+    padding-left: 3px;
+    line-height:30px;
+}
+
+@media ( max-width:1250px) {
+    .orgApplyInfo .main {
+        width:100%;
+        padding-right: 0;
+    }
+
+    .orgApplyInfo .tools {
+        display:none;
+    }
+}
+
+.orgApplyInfo .buttonGroup {
+    margin-top: 20px;
+}
+
+.orgApplyInfo .buttonGroup button {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.orgApplyInfo .grid-panel {
+    padding: 0px 0px;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+    margin-bottom: 7px;
+}
+
+.orgApplyInfo .grid-title {
+    padding: 10px;
+    text-align: left;
+    margin-left: -15px;
+    color: #108ee9;
+}
+
+.orgApplyInfo .db-table-button {
+    margin: 4px 0 4px 1.5% !important;
+    font-size: 16px !important;
+    text-align: left !important;
+}

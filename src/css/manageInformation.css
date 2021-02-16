@@ -1,0 +1,27 @@
+.mR-box .widget-content-user{
+    overflow: hidden;
+}
+.mR-box .userOrgList{
+    float: left;
+    max-height: 415px;
+    overflow-y: auto;
+    margin-right: 10px;
+}
+.mR-box .userTransfer{
+    float: left;
+}
+
+
+.RichEditor-editor{
+    min-height: 200px;
+    max-height: 800px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.RichEditor-editor .public-DraftEditor-content{
+    min-height:0 !important;
+}
+.RichEditor-editor .public-DraftEditorPlaceholder-root, .RichEditor-editor .public-DraftEditor-content{
+    padding:0 !important;
+    margin: 0 !important;
+}
