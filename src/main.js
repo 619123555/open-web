@@ -179,6 +179,8 @@ render((
                onEnter={authorityControl}/>
         <Route path="manageSystem/sysConfig" getComponent={MyRouter.sysConfig}
                onEnter={authorityControl}/>
+        <Route path="order/paymentOrder" getComponent={MyRouter.paymentOrder}
+               onEnter={authorityControl}/>
       </Router>
     </Router>
 ), document.getElementById('app'));

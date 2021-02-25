@@ -49,6 +49,12 @@ const routePath = {
       cb(null,
           require('features/system/manageSystem/manageConfig/index').default)
     }, 'sysConfig')
+  },
+  paymentOrder: (location, cb) => {
+    require.ensure([], require => {
+      cb(null,
+          require('features/platform/order/paymentOrder/index').default)
+    }, 'paymentOrder')
   }
   // //登录
   // login: (location, cb) => {
