@@ -172,11 +172,11 @@ export default class ShowList extends React.Component {
 
   //资产追加列表下面统计
   totalAmtMessage() {
-    return (<div className="selectTotalHead">
-      <span>合计统计-->></span><span>笔数:{this.regMoney(
-        this.props.sta.pageTotal)}笔;</span><span>交易金额{this.regMoney(
-        this.props.sta.totalOrderAmount)}元</span>
-    </div>);
+    // return (<div className="selectTotalHead">
+    //   <span>合计统计-->></span><span>笔数:{this.regMoney(
+    //     this.props.sta.pageTotal)}笔;</span><span>交易金额{this.regMoney(
+    //     this.props.sta.totalOrderAmount)}元</span>
+    // </div>);
   }
 
   //格式化
@@ -213,6 +213,11 @@ export default class ShowList extends React.Component {
         dataIndex: 'status',
         key: 'status',
         render: (text, record, index) => {
+          this.props.sta.pay_type.forEach(function (val) {
+            if (val.value == text) {
+              text = val.label;
+            }
+          });
           return text;
         },
       }, {
@@ -269,9 +274,15 @@ export default class ShowList extends React.Component {
         dataIndex: 'channelId',
         key: 'channelId',
         render: (text, index) => {
+          this.props.sta.Common_Channel.forEach(function (val) {
+            if (val.value == text) {
+              text = val.label;
+            }
+          });
           return text;
         },
-      },];
+      },
+    ];
 
     const rowSelection = {
       selectedRowKeys: this.state.selectedRowKeys,
@@ -280,7 +291,7 @@ export default class ShowList extends React.Component {
 
     return (
         <div>
-          <Table rowKey={'internalNo'} ref="rcTable" columns={columns}
+          <Table rowKey={'tradeNo'} ref="rcTable" columns={columns}
                  pagination={false}
                  onRowClick={this.handleRowClick}
                  dataSource={this.props.sta.data}

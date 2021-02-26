@@ -67,13 +67,13 @@ export default class ManagePosition extends React.Component {
     console.log("keys:" + keys);
     Fetch.getInstance().postWithRequestData("paymentOrder/getPaymentOrderList",
         {requestData: keys}).then((data) => {
-      console.log(data.data);
       this.setState({
-        data: data.data.data.list,
-        pageTotal: data.data.data.total,
+        data: data.data.list,
+        pageTotal: data.data.total,
         totalOrderAmount: data.data.totalOrderAmount
       });
     })
+    console.log(this.state.data)
   }
 
 

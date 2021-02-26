@@ -84,9 +84,9 @@ class SearchForm extends React.Component {
                 <Button type="primary" onClick={this.handleSearch}
                         key={2} icon="search" title={"查询"}/>,
                 <Button style={{marginLeft: 8}} onClick={this.handleReset.bind(this)}
-                        key={6} icon="sync" title={"重置"}/>,
-                <Button style={{marginLeft: 8}}
-                onClick={this.handleDownloadExcel} key={9} icon="download" title={"下载excel"}/>
+                        key={6} icon="sync" title={"重置"}/>
+                // <Button style={{marginLeft: 8}}
+                // onClick={this.handleDownloadExcel} key={9} icon="download" title={"下载excel"}/>
               ]
             ]}
           </RcSearchPanel>

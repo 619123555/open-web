@@ -6,7 +6,7 @@ export default class SubFetch {
 
   static getInstance() {
     if (!SubFetch.subinstance) {
-      SubFetch.subinstance = new Fetch("platform");
+      SubFetch.subinstance = new Fetch("system");
     }
     return SubFetch.subinstance;
   }
