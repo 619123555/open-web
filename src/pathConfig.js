@@ -12,12 +12,8 @@ const path = {
   TITLE: "运营平台",
   //网站标题
   WEBTITLE: "运营平台",
-  // 本地 http://127.0.0.1:8092/
-  // 测试内网 http://10.10.20.106:5000/
-  // 测试外网 http://118.26.192.195:5000/
-  // 生产内网 http://10.30.10.114:8092/
-  // 生产外网 http://118.26.192.195:5001/
-  BASE_URL: "http://127.0.0.1:8090/",
+  // BASE_URL: "http://127.0.0.1:8090/",
+  BASE_URL: "http://www.mercury.zone/",
   //菜单
   MENU_URL: "system/menu/treeMenuData",
   //登录
