@@ -14,7 +14,7 @@ module.exports = {
   //entry:  __dirname + "/app/main.js",//唯一入口文件
   output: {
     path: __dirname + pathConfig.PROJECTNAME,//打包后的文件存放的地方
-    publicPath: "/",
+    publicPath: "./",
     filename: "js/[name]-[hash].js",//打包后输出文件的文件名
     chunkFilename: 'js/[name].[chunkhash:5].chunk.js'
   },
