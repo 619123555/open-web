@@ -55,6 +55,12 @@ const routePath = {
       cb(null,
           require('features/platform/order/paymentOrder/index').default)
     }, 'paymentOrder')
+  },
+  cardOrder: (location, cb) => {
+    require.ensure([], require => {
+      cb(null,
+          require('features/platform/order/cardOrder/index').default)
+    }, 'cardOrder')
   }
   // //登录
   // login: (location, cb) => {

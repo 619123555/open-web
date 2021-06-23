@@ -181,6 +181,8 @@ render((
                onEnter={authorityControl}/>
         <Route path="order/paymentOrder" getComponent={MyRouter.paymentOrder}
                onEnter={authorityControl}/>
+        <Route path="order/cardOrder" getComponent={MyRouter.cardOrder}
+               onEnter={authorityControl}/>
       </Router>
     </Router>
 ), document.getElementById('app'));
