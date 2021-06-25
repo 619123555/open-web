@@ -25,7 +25,7 @@ class SearchForm extends React.Component {
     const {getFieldDecorator} = this.props.form;
     const formItemLayout = {
       labelCol: {span: 8},
-      wrapperCol: {span: 39},
+      wrapperCol: {span: 20},
     };
     const dateFormat = 'YYYY-MM-DD';
     // TimePicker.format("YYYY-MM-DD HH:mm:ss");
@@ -34,9 +34,9 @@ class SearchForm extends React.Component {
       console.log("TimePicker");
     console.log(TimePicker);
       console.log(RangePicker);
-    let com_hannels = this.props.sta.Common_Channel != null
-      && this.props.sta.Common_Channel.length > 0
-          ? this.props.sta.Common_Channel.map(
+    let com_hannels = this.props.sta.card_channel != null
+      && this.props.sta.card_channel.length > 0
+          ? this.props.sta.card_channel.map(
               d => <Option key={d.value} value={d.value}>{d.label}</Option>) : [];
     let Common_BusinessCode = this.props.sta.Common_BusinessCode != null
     && this.props.sta.Common_BusinessCode.length > 0
@@ -46,9 +46,13 @@ class SearchForm extends React.Component {
     && this.props.sta.pay_type.length > 0
         ? this.props.sta.pay_type.map(
             d => <Option key={d.value} value={d.value}>{d.label}</Option>) : [];
+    let card_trade_type = this.props.sta.card_trade_type != null
+    && this.props.sta.card_trade_type.length > 0
+        ? this.props.sta.card_trade_type.map(
+            d => <Option key={d.value} value={d.value}>{d.label}</Option>) : [];
     return (
         <Form onSubmit={this.handleSearch}>
-          <RcSearchPanel formJustify='center' colNum={3}>
+          <RcSearchPanel formJustify='center' colNum={2}>
             {[
               [<FormItem label="流水号"  {...formItemLayout} key={1}>
                 {getFieldDecorator('tradeNo')(

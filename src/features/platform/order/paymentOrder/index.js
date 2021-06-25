@@ -24,12 +24,13 @@ export default class ManagePosition extends React.Component {
   componentDidMount() {
     this.getListData();
     // 初始化字典
-    Dictionary.getInstance().init("Common_Channel,UserTypeCD,Common_BusinessCode,pay_type").then((value) => {
+    Dictionary.getInstance().init("Common_Channel,UserTypeCD,Common_BusinessCode,pay_type,card_type").then((value) => {
       this.setState({
         Common_Channel: value.Common_Channel,
         UserTypeCD: value.UserTypeCD,
         Common_BusinessCode: value.Common_BusinessCode,
-        pay_type: value.pay_type
+        pay_type: value.pay_type,
+        card_type: value.card_type
       });
         console.log("Common_BusinessCode");
         console.log(this.state.Common_Channel);
@@ -56,9 +57,9 @@ export default class ManagePosition extends React.Component {
     const rangeTimeValue = this.refs["createForm"].getForm().getFieldValue('timeExpires')
         ? this.refs["createForm"].getForm().getFieldValue('timeExpires') : [];
     if (rangeTimeValue.length>0) {
-        keys["timeExpireBegin"] = rangeTimeValue[0] ?
+        keys["startTime"] = rangeTimeValue[0] ?
             rangeTimeValue[0].format('YYYY-MM-DD HH:mm:ss') : "";
-        keys["timeExpireEnd"] = rangeTimeValue[1] ?
+        keys["endTime"] = rangeTimeValue[1] ?
             rangeTimeValue[1].format('YYYY-MM-DD HH:mm:ss') : "";
     }
 

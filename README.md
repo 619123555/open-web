@@ -11,6 +11,7 @@ window环境执行dependency.bat安装依赖组件
 mac/linux执行dependency.sh
 
 运行项目
+npm run build
 npm start
 
 访问

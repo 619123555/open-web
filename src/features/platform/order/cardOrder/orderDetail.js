@@ -27,7 +27,6 @@ class PositionForm extends React.Component {
   }
 
   hideModelHandler = () => {
-    console.log("5555555");
     this.props.setState({
       editAddModelVisible: false,
       //checkedKeys: [],
@@ -65,11 +64,11 @@ class PositionForm extends React.Component {
       wrapperCol: {span: 15},
     };
     //通道
-    let Common_Channel = null;
-    console.log(this.props.propsSta.Common_Channel);
-    if (this.props.propsSta.Common_Channel != null) {
-      Common_Channel = this.props.propsSta.Common_Channel.length > 0
-          ? this.props.propsSta.Common_Channel.map(d =>
+    let card_channel = null;
+    console.log(this.props.propsSta.card_channel);
+    if (this.props.propsSta.card_channel != null) {
+      card_channel = this.props.propsSta.card_channel.length > 0
+          ? this.props.propsSta.card_channel.map(d =>
               <Option key={d.value} value={d.value}>{d.label}</Option>) : null;
     }
 

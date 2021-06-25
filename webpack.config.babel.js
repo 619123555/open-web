@@ -69,7 +69,7 @@ module.exports = {
     }),
   ],
   devServer: {
-    contentBase: "./public",
+    contentBase: "./manage",
     historyApiFallback: true,
     hot: true,
     port: 80

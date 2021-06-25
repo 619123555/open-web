@@ -208,6 +208,24 @@ export default class ShowList extends React.Component {
           return text;
         }
       },
+      ,
+      {
+        title: '实际金额',
+        dataIndex: 'realAmount',
+        key: 'realAmount',
+        render: (text, record, index) => {
+          return text;
+        }
+      },
+      ,
+      {
+        title: '结算金额',
+        dataIndex: 'settleAmount',
+        key: 'settleAmount',
+        render: (text, record, index) => {
+          return text;
+        }
+      },
       {
         title: '订单状态',
         dataIndex: 'status',
@@ -220,61 +238,42 @@ export default class ShowList extends React.Component {
           });
           return text;
         },
-      }, {
+      },
+      {
+        title: '交易卡类型',
+        dataIndex: 'cardType',
+        key: 'cardType',
+        render: (text, record, index) => {
+          this.props.sta.card_trade_type.forEach(function (val) {
+            if (val.value == text) {
+              text = val.label;
+            }
+          });
+          return text;
+        },
+      },
+      {
         title: '创建时间',
         dataIndex: 'createTime',
         key: 'createTime',
         render: (text, record, index) => {
           return CommonTools.fmtTimeStampToDateLong(text);
         },
-      }, {
+      },
+      {
         title: '完成时间',
         dataIndex: 'completeTime',
         key: 'completeTime',
         render: (text, record, index) => {
           return CommonTools.fmtTimeStampToDateLong(text);
         },
-      }, {
-        title: '付款卡账号',
-        dataIndex: 'payerAccNo',
-        key: 'payerAccNo',
-        render: (text, index) => {
-          return text;
-        },
-      }, {
-        title: '付款卡户名',
-        dataIndex: 'payerAccName',
-        key: 'payerAccName',
-        render: (text, index) => {
-          return text;
-        },
-      }, {
-        title: '收款卡账号',
-        dataIndex: 'payeeAccNo',
-        key: 'payeeAccNo',
-        render: (text, index) => {
-          return text;
-        },
-      }, {
-        title: '收款卡户名',
-        dataIndex: 'payeeAccName',
-        key: 'payeeAccName',
-        render: (text, index) => {
-          return text;
-        },
-      }, {
-        title: '收款人手机号',
-        dataIndex: 'payeePhone',
-        key: 'payeePhone',
-        render: (text, index) => {
-          return text;
-        },
-      }, {
+      },
+      {
         title: '通道',
         dataIndex: 'channelId',
         key: 'channelId',
         render: (text, index) => {
-          this.props.sta.Common_Channel.forEach(function (val) {
+          this.props.sta.card_channel.forEach(function (val) {
             if (val.value == text) {
               text = val.label;
             }
