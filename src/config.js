@@ -31,8 +31,8 @@ module.exports = {
 
     api: {  // 对后端请求的相关配置
         // host: 'http://localhost:8090/system',  // 调用ajax接口的地址, 默认值空, 如果是跨域的, 服务端要支持CORS
-        host: 'http://www.mercury.zone/system',  // 调用ajax接口的地址, 默认值空, 如果是跨域的, 服务端要支持CORS
-        path: '/api',  // ajax请求的路径
+        host: 'http://47.97.219.169/system',  // 调用ajax接口的地址, 默认值空, 如果是跨域的, 服务端要支持CORS
+        path: '/system',  // ajax请求的路径
         timeout: 15000,  // 请求的超时时间, 单位毫秒
     },
 

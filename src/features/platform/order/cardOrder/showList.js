@@ -208,20 +208,18 @@ export default class ShowList extends React.Component {
           return text;
         }
       },
-      ,
       {
-        title: '实际金额',
-        dataIndex: 'realAmount',
-        key: 'realAmount',
+        title: '手续费',
+        dataIndex: 'mercFee',
+        key: 'mercFee',
         render: (text, record, index) => {
           return text;
         }
       },
-      ,
       {
-        title: '结算金额',
-        dataIndex: 'settleAmount',
-        key: 'settleAmount',
+        title: '通道成本',
+        dataIndex: 'channelCost',
+        key: 'channelCost',
         render: (text, record, index) => {
           return text;
         }
@@ -265,7 +263,9 @@ export default class ShowList extends React.Component {
         dataIndex: 'completeTime',
         key: 'completeTime',
         render: (text, record, index) => {
-          return CommonTools.fmtTimeStampToDateLong(text);
+          if(null != text){
+            return CommonTools.fmtTimeStampToDateLong(text);
+          }
         },
       },
       {
