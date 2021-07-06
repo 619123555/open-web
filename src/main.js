@@ -1,5 +1,5 @@
 import {render} from 'react-dom';
-import {browserHistory, IndexRoute, Route, Router} from 'react-router';
+import {hashHistory, IndexRoute, Route, Router} from 'react-router';
 import MyRouter from './router';
 import Navigation from 'components/menu/menu'
 import Login from 'components/login/login'
@@ -158,7 +158,7 @@ const authorityControl = (nextState, replace, next) => {
   })
 }
 render((
-    <Router history={browserHistory}>
+    <Router history={hashHistory}>
       <Router path="/manage" component={Structure}>
         <IndexRoute getComponent={MyRouter.workBenchAM}/>
         {/*<Route path="/" getComponent={MyRouter.login}/>*/}
